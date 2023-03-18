@@ -1,7 +1,7 @@
 import React, { useContext, useState } from 'react'
 import axios from 'axios';
 import { fileContext } from '../../Context/fileContext';
-import DragAndDropCSS from './DragAndDrop.css'
+import './DragAndDrop.css'
 
 const DragAndDrop = () => {
     const [newFile, setNewFile] = useState(null)
