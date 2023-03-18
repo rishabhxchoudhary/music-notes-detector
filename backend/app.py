@@ -3,7 +3,7 @@ from function import get_music_notes
 from fastapi.middleware.cors import CORSMiddleware
 
 origins = [
-    'http://localhost:3000'
+    'http://localhost:3001'
 ]
 
 app = FastAPI()

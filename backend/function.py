@@ -21,16 +21,16 @@ def freq_to_note(freq):
 
 def getNotes(times,max_freqs):
     final = {}
-    # prev = "C"
-    # prev_octave=0
+    prev = "C"
+    prev_octave=0
     for i in range(len(times)):
-        # note,octave = freq_to_note(max_freqs[i])
-        # if note==None: continue
-        # if note==prev: continue
+        note,octave = freq_to_note(max_freqs[i])
+        if note==None: continue
+        if note==prev: continue
         # if octave>=2 and octave<=5:
-        final[str(int(times[i]*1000))] = max_freqs[i]
-        # prev = note
-        # prev_octave = octave
+        final[str(int(times[i]*1000))] = prev+str(prev_octave)
+        prev = note
+        prev_octave = octave
     return final
 
 

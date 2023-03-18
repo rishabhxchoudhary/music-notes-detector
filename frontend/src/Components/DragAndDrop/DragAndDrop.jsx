@@ -22,8 +22,8 @@ const DragAndDrop = () => {
     <>
       <div className="container">
         <form onSubmit={handleSubmit}>
-            <input type="file" onChange={(e)=>{setNewFile(e.target.files[0])}} required/>
-            <button>Submit</button>
+            <input type="file" className='file-input' onChange={(e)=>{setNewFile(e.target.files[0])}} required/>
+            <button type='submit'>Submit</button>
         </form>
       </div>
     </>
