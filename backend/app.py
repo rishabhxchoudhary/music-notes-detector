@@ -1,6 +1,5 @@
 from fastapi import FastAPI, File, UploadFile
 from function import get_music_notes
-import json
 from fastapi.middleware.cors import CORSMiddleware
 
 origins = [
