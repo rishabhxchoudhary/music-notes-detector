@@ -1,7 +1,6 @@
-First install all the dependencies
-
-cd to backend and run the backend server using command:
-
-`uvicorn app:app --reload`
-
-then go to front end and run it.
+To run backend : 
+```
+cd backend/
+pip install -r requirements.txt
+uvicorn app:app --reload
+```
